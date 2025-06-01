@@ -1,8 +1,0 @@
-README.md
-main.py
-pyproject.toml
-weather_poet.egg-info/PKG-INFO
-weather_poet.egg-info/SOURCES.txt
-weather_poet.egg-info/dependency_links.txt
-weather_poet.egg-info/requires.txt
-weather_poet.egg-info/top_level.txt
