@@ -1,0 +1,15 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = "A Chainlit chatbot with Gemini integration"
+authors = ["Aeyla Naseer <aeylanaseer@gmail.com>"]
+requires-python = ">=3.8"
+dependencies = [
+    "chainlit",
+    "litellm",
+    "python-dotenv"
+]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,53 @@
+[project]
+name = "weather-poet"
+version = "0.1.0"
+description = "AI weather assistant with poetic responses"
+authors = [
+    {name = "Aeyla Naseer", email = "aeylanaseer@example.com"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "chainlit>=1.0.0",
+    "litellm>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "pydantic>=2.0.0",  # For data validation
+    "typing-extensions>=4.0.0; python_version<'3.11'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.20.0",
+    "black>=23.0",
+    "ruff>=0.0.280",
+    "mypy>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.chainlit]
+config = "chainlit.md"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "I", "UP", "PL"]
+ignore = ["E501"]
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]

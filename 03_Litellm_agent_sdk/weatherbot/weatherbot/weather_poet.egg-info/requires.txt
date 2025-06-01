@@ -1,0 +1,15 @@
+chainlit>=1.0.0
+litellm>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+pydantic>=2.0.0
+
+[:python_version < "3.11"]
+typing-extensions>=4.0.0
+
+[dev]
+pytest>=7.0
+pytest-asyncio>=0.20.0
+black>=23.0
+ruff>=0.0.280
+mypy>=1.0.0
